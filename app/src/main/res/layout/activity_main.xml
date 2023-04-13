@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#3772E7"
+    android:padding="20dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Playlist maker"
+        android:textSize="@dimen/text_size"
+        android:paddingBottom="40dp"
+        android:paddingTop
+        android:textColor="#ffffff"/>
+    <Button
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icon="@drawable/ic_search_icon"
+        android:id="@+id/searchId"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        app:cornerRadius="@dimen/radius_button"
+        android:text="@string/button_search"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/radius_button"
+        />
+    <Button
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icon="@drawable/ic_icon_library"
+        android:id="@+id/libraryId"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        app:cornerRadius="@dimen/radius_button"
+        android:text="Медиатека"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/radius_button"
+        />
+    <Button
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icon="@drawable/ic_setting_icon"
+        android:id="@+id/settingId"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconTint="@color/black"
+        android:textSize="@dimen/text_size"
+        app:cornerRadius="@dimen/radius_button"
+        android:text="Настройки"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/radius_button"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
